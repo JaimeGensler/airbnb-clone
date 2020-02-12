@@ -7,7 +7,7 @@ export default function Header() {
         height: '6vh',
         minHeight: '3rem',
         padding: '0',
-        backgroundColor: 'gray'
+        backgroundColor: 'rgba(0, 0, 0, 0.8)'
     };
     const navStyles = {
         float: 'right',
@@ -38,16 +38,23 @@ export default function Header() {
         color: 'white',
         textDecoration: 'none'
     };
+    const centerImage = {
+        padding: '1rem',
+        height: '100%',
+        float: 'left'
+    };
     return (
         <Router>
             <div style={headerStyles}>
-                <Link to="/">
-                    <img
-                        style={{ maxHeight: '80%' }}
-                        src="logo.png"
-                        alt="AirBnBImage"
-                    />
-                </Link>
+                <div style={centerImage}>
+                    <Link to="/">
+                        <img
+                            style={{ height: '100%' }}
+                            src="logo.png"
+                            alt="AirBnBImage"
+                        />
+                    </Link>
+                </div>
                 <nav style={navStyles}>
                     <ul style={listStyles}>
                         <li style={listItemStyle}>
