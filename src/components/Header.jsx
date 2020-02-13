@@ -29,14 +29,15 @@ export default function Header() {
         listStyleType: 'none',
         fontSize: '1.1vh'
     };
-    const listItemStyle = {
+    const listItemStyle = {};
+    const linkStyle = {
+        color: 'white',
+        textDecoration: 'none',
+        width: '100%',
+        height: '100%',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
-    };
-    const linkStyle = {
-        color: 'white',
-        textDecoration: 'none'
     };
     const centerImage = {
         padding: '1rem',
@@ -58,12 +59,12 @@ export default function Header() {
                 <nav style={navStyles}>
                     <ul style={listStyles}>
                         <li style={listItemStyle}>
-                            <Link to="/becomeahost" style={linkStyle}>
+                            <Link to="/language" style={linkStyle}>
                                 English (US)
                             </Link>
                         </li>
                         <li style={listItemStyle}>
-                            <Link to="/help" style={linkStyle}>
+                            <Link to="/currency" style={linkStyle}>
                                 $ USD
                             </Link>
                         </li>
@@ -73,22 +74,22 @@ export default function Header() {
                             </Link>
                         </li>
                         <li style={listItemStyle}>
-                            <Link to="/becomeahost" style={linkStyle}>
+                            <Link to="/hostanexperience" style={linkStyle}>
                                 Host an experience
                             </Link>
                         </li>
                         <li style={listItemStyle}>
-                            <Link to="/becomeahost" style={linkStyle}>
+                            <Link to="/help" style={linkStyle}>
                                 Help
                             </Link>
                         </li>
                         <li style={listItemStyle}>
-                            <Link to="/becomeahost" style={linkStyle}>
+                            <Link to="/signup" style={linkStyle}>
                                 Sign up
                             </Link>
                         </li>
                         <li style={listItemStyle}>
-                            <Link to="/becomeahost" style={linkStyle}>
+                            <Link to="/login" style={linkStyle}>
                                 Log in
                             </Link>
                         </li>
